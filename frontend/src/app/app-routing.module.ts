@@ -7,6 +7,14 @@ const routes: Routes = [
     loadChildren: () => import('./components/sections/home/home.module').then(m => m.HomeModule)
   },
   {
+    path: 'signin',
+    loadChildren: () => import('./components/sections/signin/signin-routing.module').then(m => m.SigninRoutingModule)
+  },
+  {
+    path: 'signup',
+    loadChildren: () => import('./components/sections/signup/signup-routing.module').then(m => m.SignupRoutingModule)
+  },
+  {
     path: '**',
     redirectTo: 'home'
   }

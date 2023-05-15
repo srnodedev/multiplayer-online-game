@@ -6,15 +6,18 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/sections/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatToolbarModule } from '@angular/material/toolbar';
 import { HeaderComponent } from './components/sections/home/header/header.component';
 import { GameListComponent } from './components/sections/game-list/game-list.component';
-import { MatCardModule } from '@angular/material/card';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatProgressBarModule } from '@angular/material/progress-bar';
-import { MatButtonModule } from '@angular/material/button';
 import { CardComponent } from './components/shared/card/card.component';
 import { RoomCardComponent } from './components/shared/room-card/room-card.component';
+import { SigninComponent } from './components/sections/signin/signin.component';
+import { SignupComponent } from './components/sections/signup/signup.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatFormFieldModule } from '@angular/material/form-field'
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input'
 
 @NgModule({
   declarations: [
@@ -23,18 +26,21 @@ import { RoomCardComponent } from './components/shared/room-card/room-card.compo
     HeaderComponent,
     GameListComponent,
     CardComponent,
-    RoomCardComponent
+    RoomCardComponent,
+    SigninComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    MatToolbarModule,
     MatCardModule,
-    MatDividerModule,
-    MatProgressBarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatMenuModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
